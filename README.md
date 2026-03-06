@@ -100,6 +100,7 @@ xcodebuild -project TextPolish.xcodeproj -scheme TextPolish -configuration Debug
 
 ### 支持的 API
 
+- **MiniMax M2.5** (默认): `https://api.minimax.chat/v1` - 模型: `abab6.5s-chat`
 - **通义千问**: `https://dashscope.aliyuncs.com/compatible-mode/v1`
 - **Kimi**: `https://api.moonshot.cn/v1`
 - **OpenAI**: `https://api.openai.com/v1`

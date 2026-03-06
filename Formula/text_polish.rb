@@ -5,14 +5,14 @@ class TextPolish < Formula
   version "1.0.0"
   license "MIT"
 
-  # 一键安装版默认配置
+  # 一键安装版默认配置 (MiniMax M2.5)
   # 用户可通过环境变量覆盖：
   # TEXT_POLISH_BASE_URL, TEXT_POLISH_API_KEY, TEXT_POLISH_MODEL
   def default_api_config
     {
-      base_url: ENV["TEXT_POLISH_BASE_URL"] || "https://dashscope.aliyuncs.com/compatible-mode/v1",
+      base_url: ENV["TEXT_POLISH_BASE_URL"] || "https://api.minimax.chat/v1",
       api_key: ENV["TEXT_POLISH_API_KEY"] || "",
-      model: ENV["TEXT_POLISH_MODEL"] || "qwen-turbo"
+      model: ENV["TEXT_POLISH_MODEL"] || "abab6.5s-chat"
     }
   end
 
