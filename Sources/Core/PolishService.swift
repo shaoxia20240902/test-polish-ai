@@ -4,8 +4,25 @@ class PolishService {
 
     private let config: APIConfig
 
+    /// 是否使用默认配置（一键安装版）
+    private let useDefaultConfig: Bool
+
     init(config: APIConfig = .load()) {
-        self.config = config
+        // 检查用户是否配置了自己的 API，没有则使用默认配置
+        let userConfig = APIConfig.load()
+        if userConfig.apiKey.isEmpty {
+            // 用户未配置，使用默认配置
+            self.useDefaultConfig = true
+            self.config = APIConfig(
+                baseURL: DefaultAPIConfig.baseURL,
+                apiKey: DefaultAPIConfig.apiKey,
+                model: DefaultAPIConfig.model
+            )
+        } else {
+            // 用户已配置自己的 API
+            self.useDefaultConfig = false
+            self.config = userConfig
+        }
     }
 
     func polish(text: String, action: ShortcutAction, customPrompt: String? = nil, completion: @escaping (Result<String, Error>) -> Void) {

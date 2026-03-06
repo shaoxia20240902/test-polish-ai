@@ -48,6 +48,18 @@ class StatusBarController {
     private func setupMenu() {
         let menu = NSMenu()
 
+        // 显示当前 API 配置来源
+        let userConfig = APIConfig.load()
+        let configSource: String
+        if userConfig.apiKey.isEmpty {
+            configSource = "默认配置"
+        } else {
+            configSource = "自定义配置"
+        }
+        let statusItem = NSMenuItem(title: "API: \(configSource)", action: nil, keyEquivalent: "")
+        statusItem.isEnabled = false
+        menu.addItem(statusItem)
+
         let shortcutMenu = NSMenu()
         let configs = ShortcutConfigManager.shared.load()
         for config in configs {
