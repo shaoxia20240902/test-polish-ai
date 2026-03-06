@@ -1,0 +1,397 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2BEC062266BA8360376DE4B3 /* ShortcutSettingsWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADA997E8383458067E292C2 /* ShortcutSettingsWindowController.swift */; };
+		31767595FD5CA30911D9625B /* TextExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EE317DD3509B6287D1E050 /* TextExtractor.swift */; };
+		3AC2A29B99E69CF73D84F0F7 /* ShortcutConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12813B067B684C270553BE17 /* ShortcutConfig.swift */; };
+		62B961DD51647D3CD11C4A66 /* SettingsWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167658EDE74B1AF235328C15 /* SettingsWindowController.swift */; };
+		68777BEB99056BCAF2F4CD4E /* ResultWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CBE5C8F574EDD362D4E86EB /* ResultWindowController.swift */; };
+		8088E5BB6D98EB49048C7197 /* HotKey in Frameworks */ = {isa = PBXBuildFile; productRef = 56EC6BD863C78FBAAFF4F20F /* HotKey */; };
+		9F3E9AD829BA4BA6CFD62B17 /* StatusBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F4478B9090153D5C932B9B /* StatusBarController.swift */; };
+		A88B217CF02467EDB834EE14 /* PolishService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C373A12DE3C492B86DEBD71E /* PolishService.swift */; };
+		B9B79B745AD787B332F3A394 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F950DC94C8E01BDC32E6D62 /* AppDelegate.swift */; };
+		BA3B36AAB18F3CEBD9C6ED95 /* HotKeyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8EB194EB78DAE41C4164D0 /* HotKeyManager.swift */; };
+		BEEC9CF8EB6BAB6E2AEC9DB6 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412559E8FF2184530A8971F2 /* Config.swift */; };
+		D5517B7E9EC26FC96436A9D1 /* DefaultConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4569F16773F33C1DD4C18ABD /* DefaultConfig.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		07EE317DD3509B6287D1E050 /* TextExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextExtractor.swift; sourceTree = "<group>"; };
+		12813B067B684C270553BE17 /* ShortcutConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutConfig.swift; sourceTree = "<group>"; };
+		167658EDE74B1AF235328C15 /* SettingsWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsWindowController.swift; sourceTree = "<group>"; };
+		412559E8FF2184530A8971F2 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		4569F16773F33C1DD4C18ABD /* DefaultConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultConfig.swift; sourceTree = "<group>"; };
+		5ADA997E8383458067E292C2 /* ShortcutSettingsWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutSettingsWindowController.swift; sourceTree = "<group>"; };
+		7CBE5C8F574EDD362D4E86EB /* ResultWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultWindowController.swift; sourceTree = "<group>"; };
+		9F950DC94C8E01BDC32E6D62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C2F4478B9090153D5C932B9B /* StatusBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarController.swift; sourceTree = "<group>"; };
+		C373A12DE3C492B86DEBD71E /* PolishService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolishService.swift; sourceTree = "<group>"; };
+		DE0B4C3D6118BDA4C788C931 /* TextPolish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextPolish.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC8EB194EB78DAE41C4164D0 /* HotKeyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotKeyManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ADBDE7C719A955D5FCF505BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8088E5BB6D98EB49048C7197 /* HotKey in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4CD66315535546CC33C4AF4D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				412559E8FF2184530A8971F2 /* Config.swift */,
+				4569F16773F33C1DD4C18ABD /* DefaultConfig.swift */,
+				12813B067B684C270553BE17 /* ShortcutConfig.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		504D93DDC94BE46E455BF534 = {
+			isa = PBXGroup;
+			children = (
+				F1F57BB32D09A13D29699190 /* Sources */,
+				D0EB3D2355E6CB174E3358FE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6519EF7A1120A11382A495FE /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				7CBE5C8F574EDD362D4E86EB /* ResultWindowController.swift */,
+				167658EDE74B1AF235328C15 /* SettingsWindowController.swift */,
+				5ADA997E8383458067E292C2 /* ShortcutSettingsWindowController.swift */,
+				C2F4478B9090153D5C932B9B /* StatusBarController.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		8E5302C8DCED762CFAA2CD6C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				9F950DC94C8E01BDC32E6D62 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		D0EB3D2355E6CB174E3358FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DE0B4C3D6118BDA4C788C931 /* TextPolish.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F1F57BB32D09A13D29699190 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				8E5302C8DCED762CFAA2CD6C /* App */,
+				FEAB7010505FC39BC7339155 /* Core */,
+				4CD66315535546CC33C4AF4D /* Models */,
+				6519EF7A1120A11382A495FE /* UI */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		FEAB7010505FC39BC7339155 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				FC8EB194EB78DAE41C4164D0 /* HotKeyManager.swift */,
+				C373A12DE3C492B86DEBD71E /* PolishService.swift */,
+				07EE317DD3509B6287D1E050 /* TextExtractor.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		791CE67BAA73A22EE9684080 /* TextPolish */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAAC442C702C986C7314AFF2 /* Build configuration list for PBXNativeTarget "TextPolish" */;
+			buildPhases = (
+				EF8BF5E7EBF0A6A07EF19FF4 /* Sources */,
+				ADBDE7C719A955D5FCF505BC /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TextPolish;
+			packageProductDependencies = (
+				56EC6BD863C78FBAAFF4F20F /* HotKey */,
+			);
+			productName = TextPolish;
+			productReference = DE0B4C3D6118BDA4C788C931 /* TextPolish.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA9C0B600155A33A2BE1549D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					791CE67BAA73A22EE9684080 = {
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = E4C33D01E1A43F18513E1785 /* Build configuration list for PBXProject "TextPolish" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 504D93DDC94BE46E455BF534;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				EF5D70736E14F8C81C360971 /* XCRemoteSwiftPackageReference "HotKey" */,
+			);
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				791CE67BAA73A22EE9684080 /* TextPolish */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF8BF5E7EBF0A6A07EF19FF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9B79B745AD787B332F3A394 /* AppDelegate.swift in Sources */,
+				BEEC9CF8EB6BAB6E2AEC9DB6 /* Config.swift in Sources */,
+				D5517B7E9EC26FC96436A9D1 /* DefaultConfig.swift in Sources */,
+				BA3B36AAB18F3CEBD9C6ED95 /* HotKeyManager.swift in Sources */,
+				A88B217CF02467EDB834EE14 /* PolishService.swift in Sources */,
+				68777BEB99056BCAF2F4CD4E /* ResultWindowController.swift in Sources */,
+				62B961DD51647D3CD11C4A66 /* SettingsWindowController.swift in Sources */,
+				3AC2A29B99E69CF73D84F0F7 /* ShortcutConfig.swift in Sources */,
+				2BEC062266BA8360376DE4B3 /* ShortcutSettingsWindowController.swift in Sources */,
+				9F3E9AD829BA4BA6CFD62B17 /* StatusBarController.swift in Sources */,
+				31767595FD5CA30911D9625B /* TextExtractor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2D4B3A910A50D758A48D2B83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		3DD45D17CFFD54BF1862BA73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.textpolish.app;
+				PRODUCT_NAME = TextPolish;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		43DAC14D081932F368E7C23D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.textpolish.app;
+				PRODUCT_NAME = TextPolish;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		8A3A0175D306C37ED4CE95F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DAAC442C702C986C7314AFF2 /* Build configuration list for PBXNativeTarget "TextPolish" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DD45D17CFFD54BF1862BA73 /* Debug */,
+				43DAC14D081932F368E7C23D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E4C33D01E1A43F18513E1785 /* Build configuration list for PBXProject "TextPolish" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D4B3A910A50D758A48D2B83 /* Debug */,
+				8A3A0175D306C37ED4CE95F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EF5D70736E14F8C81C360971 /* XCRemoteSwiftPackageReference "HotKey" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/soffes/HotKey";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		56EC6BD863C78FBAAFF4F20F /* HotKey */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EF5D70736E14F8C81C360971 /* XCRemoteSwiftPackageReference "HotKey" */;
+			productName = HotKey;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = FA9C0B600155A33A2BE1549D /* Project object */;
+}
