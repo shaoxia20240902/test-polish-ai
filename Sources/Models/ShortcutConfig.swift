@@ -45,12 +45,13 @@ struct ShortcutConfig: Codable, Identifiable {
     var customPrompt: String?
 
     static func defaultConfigs() -> [ShortcutConfig] {
+        // 使用 Command + Shift + F1-F5 避免与系统快捷键冲突
         return [
-            ShortcutConfig(id: "1", action: .polish, keyCode: UInt32(kVK_F1), modifiers: UInt32(cmdKey), isEnabled: true),
-            ShortcutConfig(id: "2", action: .summarize, keyCode: UInt32(kVK_F2), modifiers: UInt32(cmdKey), isEnabled: true),
-            ShortcutConfig(id: "3", action: .formalize, keyCode: UInt32(kVK_F3), modifiers: UInt32(cmdKey), isEnabled: true),
-            ShortcutConfig(id: "4", action: .codeExplain, keyCode: UInt32(kVK_F4), modifiers: UInt32(cmdKey), isEnabled: true),
-            ShortcutConfig(id: "5", action: .translate, keyCode: UInt32(kVK_F5), modifiers: UInt32(cmdKey), isEnabled: true)
+            ShortcutConfig(id: "1", action: .polish, keyCode: UInt32(kVK_F1), modifiers: UInt32(cmdKey | shiftKey), isEnabled: true),
+            ShortcutConfig(id: "2", action: .summarize, keyCode: UInt32(kVK_F2), modifiers: UInt32(cmdKey | shiftKey), isEnabled: true),
+            ShortcutConfig(id: "3", action: .formalize, keyCode: UInt32(kVK_F3), modifiers: UInt32(cmdKey | shiftKey), isEnabled: true),
+            ShortcutConfig(id: "4", action: .codeExplain, keyCode: UInt32(kVK_F4), modifiers: UInt32(cmdKey | shiftKey), isEnabled: true),
+            ShortcutConfig(id: "5", action: .translate, keyCode: UInt32(kVK_F5), modifiers: UInt32(cmdKey | shiftKey), isEnabled: true)
         ]
     }
 }

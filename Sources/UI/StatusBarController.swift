@@ -30,7 +30,8 @@ class StatusBarController {
 
         return enabledConfigs.map { config in
             let keyName = keyCodeToString(config.keyCode)
-            return "\(keyName)\(config.action.displayName)"
+            let modifierPrefix = modifiersToString(config.modifiers)
+            return "\(modifierPrefix)\(keyName)\(config.action.displayName)"
         }.joined(separator: " | ")
     }
 
@@ -43,6 +44,23 @@ class StatusBarController {
         case UInt32(kVK_F5): return "F5"
         default: return "F\(keyCode)"
         }
+    }
+
+    private func modifiersToString(_ modifiers: UInt32) -> String {
+        var result = ""
+        if modifiers & UInt32(cmdKey) != 0 {
+            result += "⌘"
+        }
+        if modifiers & UInt32(shiftKey) != 0 {
+            result += "⇧"
+        }
+        if modifiers & UInt32(optionKey) != 0 {
+            result += "⌥"
+        }
+        if modifiers & UInt32(controlKey) != 0 {
+            result += "⌃"
+        }
+        return result
     }
 
     private func setupMenu() {
@@ -63,7 +81,8 @@ class StatusBarController {
         let shortcutMenu = NSMenu()
         let configs = ShortcutConfigManager.shared.load()
         for config in configs {
-            let item = NSMenuItem(title: "⌘\(keyCodeToString(config.keyCode)) \(config.action.displayName)",
+            let modifierPrefix = modifiersToString(config.modifiers)
+            let item = NSMenuItem(title: "\(modifierPrefix)\(keyCodeToString(config.keyCode)) \(config.action.displayName)",
                                   action: #selector(configureShortcut(_:)),
                                   keyEquivalent: "")
             item.tag = Int(config.id) ?? 0
